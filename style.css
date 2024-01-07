@@ -172,3 +172,44 @@ body {
     width: fit-content;
     border-radius: 7px;
 }
+
+@media screen and (max-width: 768px) {
+    :root {
+        /* Update variable values for mobile screens */
+        /* For example: */
+        --container-width: 90vw;
+        --padding: 1rem;
+    }
+
+    /* Update styles for mobile screens */
+    body {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+        /* Add any other mobile-specific styles */
+    }
+
+    .heading {
+        padding: 8px 1rem; /* Adjust heading padding */
+        /* Add any other mobile-specific styles */
+    }
+
+    .container {
+        width: var(--container-width); /* Adjust container width for mobile screens */
+        padding-top: 1rem; /* Adjust top padding */
+        margin-left: 50%; /* Center horizontally */
+        transform: translateX(-50%);
+        /* Add any other mobile-specific styles */
+    }
+
+    /* Add more media query rules for other elements as needed */
+}
+
+@media screen and (max-width: 768px) {
+    .single-note {
+        width: calc(90%); /* Adjust width for mobile screens */
+        margin: 10px; /* Add margin between notes */
+    }
+    .single-note:hover{
+        width: calc(100%);
+        height: auto;
+    }
+}
